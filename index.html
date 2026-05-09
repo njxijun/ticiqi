@@ -30,7 +30,7 @@
         var root = document.getElementById("root");
         if (!root) return;
         root.style.cssText = "min-height:100dvh;display:flex;align-items:center;justify-content:center;background:#050607;color:#fff;padding:24px;font-family:system-ui,sans-serif;text-align:center;line-height:1.6;";
-        root.textContent = "页面加载失败，请刷新一次。";
+        root.textContent = "页面加载失败：" + (error && (error.stack || error.message) || String(error));
         console.error(error);
       });
     </script>
