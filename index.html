@@ -13,8 +13,8 @@
     <script>
       (function () {
         if (!("serviceWorker" in navigator) || !navigator.serviceWorker.controller) return;
-        if (sessionStorage.getItem("tp-sw-refresh-20260509")) return;
-        sessionStorage.setItem("tp-sw-refresh-20260509", "1");
+        if (sessionStorage.getItem("tp-sw-refresh-20260509-v2")) return;
+        sessionStorage.setItem("tp-sw-refresh-20260509-v2", "1");
         navigator.serviceWorker
           .getRegistrations()
           .then(function (registrations) {
@@ -28,7 +28,7 @@
       })();
     </script>
     <script type="module">
-      import("./assets/index-DdE-_9i_.js?v=recording-20260509-2").catch(function (error) {
+      import("./assets/index-BYGJ0MQC.js?v=record-autoplay-20260509").catch(function (error) {
         var root = document.getElementById("root");
         if (!root) return;
         root.style.cssText = "min-height:100dvh;display:flex;align-items:center;justify-content:center;background:#050607;color:#fff;padding:24px;font-family:system-ui,sans-serif;text-align:center;line-height:1.6;";
